@@ -1,0 +1,12 @@
+{
+  "name": "portfolio_add_ink_cats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yahshemi <yahshemi@gmail.com> (yahshemi.github.io/CSS-My-Site/)",
+  "license": "MIT"
+}
