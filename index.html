@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-<title>Portfolio</title>
+<head>
+  <title>Portfolio</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&display=swap" rel="stylesheet">
+</head>
 <!-- Styles -->
 <style>
   :root {
@@ -15,43 +24,51 @@
 
 body {
 	min-height: 100vh;
-	background-color: #fafafa;
+	background-color: white;
 }
 
-.container {
+/* .container {
 	max-width: 100rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
-}
+} */
 
 h1 {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 5rem;
-  color:#000000;
+  font-family: 'Dancing Script', cursive;
+  font-size: 12rem;
+  color: #ee0979;
   line-height:1em;
   margin:0 0 0 60px;
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .heading {
-	font-family: "Montserrat", Arial, sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-size: 4rem;
 	font-weight: 500;
 	line-height: 1.5;
 	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
+	padding-top: 7rem;
+  padding-bottom: 7rem;
+	color: #ff6a00;
+
 }
 
 .heading span {
 	display: block;
 }
-
+hr{
+  border-top: 7px dotted #4ca2cd;
+}
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
 	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
 }
 
 .gallery-item {
@@ -99,7 +116,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 </style>
 <!-- End of Styles -->
 
-<div class="container">
+<div class="container-md">
   <h1 >Portfolio</h1>
   <hr>
 <h2 class="heading" style="text-align: center">Logos</h2>
@@ -269,3 +286,54 @@ Remove or comment-out the code block below to see how the browser will fall-back
 </div>
 <!-- End of Flyers -->
 </div>
+
+<!-- <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Logos
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        <h2 class="heading" style="text-align: center">Logos</h2>
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        <h2 class="heading" style="text-align: center">Logos</h2>
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        <h2 class="heading">Logos</h2>
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div> -->
